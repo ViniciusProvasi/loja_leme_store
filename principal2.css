@@ -39,7 +39,6 @@ main {
 
 main .menu {
     background-image: linear-gradient(to left, rgba(20, 85, 92, 0.618), rgba(20, 158, 76, 0.986));
-    
     min-width: 800px;
     position: relative;
 }
