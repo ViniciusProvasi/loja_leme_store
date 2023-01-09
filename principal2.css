@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Trispace:wght@200;300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
 
 :root {
     --cor0: rgba(245, 245, 245, 0.863);
@@ -12,6 +13,7 @@
     --cor6: rgba(171, 171, 171, 0.284);
     --cor7: white;
     --cor8:rgba(40, 216, 169, 0.44);
+    --cor9:#14555c;
     --font-destaque: 'Roboto Condensed', sans-serif;
     --font-importante: 'Teko', sans-serif;
 }
@@ -34,14 +36,15 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    min-width: 800px;
-    background-color: aqua;
-    background-image: linear-gradient(to left, rgba(20, 85, 92, 0.618), rgba(20, 158, 76, 0.986));
+    background-image: url(imagens/teste\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--cor9);
+    background-size: auto;
+    position: relative;
 }
+main .menu{
 
-main .menu {
-    background-image: linear-gradient(to left, rgba(20, 85, 92, 0.618), rgba(20, 158, 76, 0.986));
-    min-width: 800px;
 }
 
 main .menu-top {
@@ -98,15 +101,17 @@ main .menu-top nav ul li a {
 
 main .menu-top nav ul li a:hover {
     color: var(--cor5);
+    text-decoration: underline;
 }
 
-main .menu .primeira-caixa {
+main .primeira-caixa {
     display: flex;
     flex-direction: column;
     max-width: 30%;
     padding: 10px;
-    margin-left: 90px;
-    margin-top: 100px;
+    margin: auto;
+    margin-top: 400px;
+    margin-left: 400px;
 }
 
 main .menu .primeira-caixa h1 {
@@ -147,11 +152,12 @@ main .menu .primeira-caixa p {
     width: 330px;
     cursor: pointer;
     margin: 40px 0px;
+    
 }
 
 .btn-one {
     margin-top: 25px;
-    color: rgb(0, 255, 8);
+    color: #f6f6f6;
     background-color: transparent;
     border: transparent;
     transition: all 1s;
@@ -180,8 +186,8 @@ main .menu .primeira-caixa p {
     border-bottom-width: 1px;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-top-color: rgb(0, 255, 8);
-    border-bottom-color: rgb(0, 255, 8);
+    border-top-color: rgb(253, 253, 253);
+    border-bottom-color: rgb(255, 255, 255);
     transform: scale(0.1, 1);
 }
 
@@ -203,11 +209,11 @@ main .menu .primeira-caixa p {
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    color: rgba(0, 0, 0, 0.784);
-    border: 1px solid rgba(0, 0, 0, 0.481);
+    color: var(--cor0);
+    border: 1px solid transparent;
     font-size: larger;
     font-family: var(--font-destaque);
-    background-color: rgba(255, 255, 255, 0.992);
+    background-color: #07aa6e;
 }
 
 .btn-one:hover::after {
@@ -217,11 +223,10 @@ main .menu .primeira-caixa p {
 
 .icones-header {
     display: flex;
+    position: fixed;
     flex-direction: column;
-    align-items: flex-end;
-    background-attachment: fixed;
-    justify-items: end;
-    margin: 10px;
+    top: 70%;
+    right: 0;
 }
 
 .icones-header a {
@@ -259,37 +264,11 @@ main .menu .primeira-caixa p {
     fill: rgb(255, 255, 255);
     background-image: radial-gradient(circle at 120.71% 50%, #e1f88b 0, #cbf083 16.67%, #b0e679 33.33%, #90d86c 50%, #6dca61 66.67%, #48bf5c 83.33%, #0bb75c 100%);
 }
-
-.segunda-caixa {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 6%;
-    left: 33%;
-    text-align: center;
-}
-
-.segunda-caixa .alinhamento-imagem img {
-    display: flex;
-    height: 700px;
-    width: 700px;
-    margin-left:70px;
-}
-
-.segunda-caixa .alinhamento-imagem {
-    display: flex;
-    flex-direction: column;
-    border-radius: 50%;
-    background-image: linear-gradient(to left, rgba(40, 216, 169, 0.44)10%, rgba(49, 49, 49, 0.095)40%);
-    box-shadow: 1px 1px rgba(40, 216, 169, 0.284);
-    height: 700px;
-    width: 700px;
-}
 .lançamentos{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to right, rgba(20, 85, 92, 0.618), rgba(20, 158, 76, 0.986));
-    background-color: aqua;
+    background-image: linear-gradient(to bottom, #14555c9e, rgba(20, 158, 76, 0.986));
+    background-color: var(--cor9);
     display: flex;
 }
 .lançamentos h1{
@@ -326,6 +305,10 @@ main .menu .primeira-caixa p {
 }
 .quadrados{
     position: relative;
+    
+}
+.quadrados:hover{
+    background-color: #06864263;
 }
 .quadrado-texto{
     width: 100%;
@@ -339,7 +322,7 @@ main .menu .primeira-caixa p {
     text-align: justify;
     margin: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.319), rgba(0, 0, 0, 0.699) 80%);
     border-radius: 10px;
     opacity: 0;
@@ -363,33 +346,45 @@ main .menu .primeira-caixa p {
 }
 .quadrado-descricao{
     font-size: 0.8em;
+    text-transform: uppercase;
 }
 .caixas-quadrados{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 90%;
+    max-height: 90%;
+    
 }
 .button-lancamento{
     margin: 20px auto;
     cursor: pointer;
-    width: 50%;
-    height: 30px;
-    border: 1px solid black;
+    max-width: 50%;
+    max-height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 10px;
     border-radius: 10px;
     color: var(--cor7);
     text-transform: uppercase;
     font-weight: bolder;
-    background-color: black;
+    background-color: rgba(9, 124, 120, 0.664);
+    transition: all 0.5s ease-in-out;
 }
+
+.button-lancamento span{
+    display: flex;
+    flex-direction: column;
+    margin-top: -3px;
+}   
 .button-lancamento:hover{
-    box-shadow: 1px 1px black;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.94);
     background-color: var(--cor8);
     color: var(--cor1);
-    border: 1px solid rgba(0, 0, 0, 0.334);
+    border: 1px solid rgba(0, 0, 0, 0.081);
 }
 
 .lançamentos .caixas .quadrados:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 }
 
 [data-anime] {
