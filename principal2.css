@@ -265,11 +265,12 @@ main .menu .primeira-caixa p {
     background-image: radial-gradient(circle at 120.71% 50%, #e1f88b 0, #cbf083 16.67%, #b0e679 33.33%, #90d86c 50%, #6dca61 66.67%, #48bf5c 83.33%, #0bb75c 100%);
 }
 .lançamentos{
+    display: flex;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom, #14555c9e, rgba(20, 158, 76, 0.986));
+    background-image: linear-gradient(to bottom, #14555c9e, rgba(20, 158, 76, 0.986) , #138080);
     background-color: var(--cor9);
-    display: flex;
+    
 }
 .lançamentos h1{
     display: flex;
@@ -282,6 +283,8 @@ main .menu .primeira-caixa p {
 }
 .lançamentos .caixas{
     display: flex;
+    width: 90%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     margin: auto;
@@ -305,7 +308,8 @@ main .menu .primeira-caixa p {
 }
 .quadrados{
     position: relative;
-    
+    width: 90%;
+    height: 100%;
 }
 .quadrados:hover{
     background-color: #06864263;
@@ -350,11 +354,21 @@ main .menu .primeira-caixa p {
 }
 .caixas-quadrados{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    max-width: 90%;
-    max-height: 90%;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
     
+}
+.caixas-quadrados .quadrados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
 }
 .button-lancamento{
     margin: 20px auto;
@@ -386,7 +400,72 @@ main .menu .primeira-caixa p {
 .lançamentos .caixas .quadrados:hover{
     transform: translateY(-15px);
 }
-
+.frete{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(imagens/Entrega.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #138080;
+}
+.frete .informacao-mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 360px;
+    height: 200px;
+    margin: 100px ;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.629);
+    background-color: var(--cor7);
+}
+.frete .informacao-mapa h1{
+    display: block;
+    font: var(--font-destaque);
+    font-size: large;
+    color: var(--cor4);
+    text-align: center;
+    font: bold;
+    width: 350px;
+    padding: 5px;
+    background-color: #0b3f45;
+    color: var(--cor7);
+    border-radius: 5px 5px 0px 0px;
+}
+.frete .informacao-mapa input{
+    display: block;
+    width: 50%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.505);
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+}
+.frete .informacao-mapa input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.708);
+}
+.frete .informacao-mapa button{
+    display: block;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.frete .informacao-mapa button:hover{
+    background-color: var(--cor9);
+    color: var(--cor7);
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.568);
+    font-weight: bolder;
+    cursor: pointer;
+}
 [data-anime] {
     opacity: 0;
     transition: all 1s ease-in-out;
