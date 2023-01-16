@@ -14,6 +14,7 @@
     --cor7: white;
     --cor8:rgba(40, 216, 169, 0.44);
     --cor9:#14555c;
+    --cor10:#138080;
     --font-destaque: 'Roboto Condensed', sans-serif;
     --font-importante: 'Teko', sans-serif;
 }
@@ -426,14 +427,14 @@ main .menu .primeira-caixa p {
 }
 .frete .informacao-mapa h1{
     display: block;
-    font: var(--font-destaque);
+    font: var(--font-importante);
     font-size: large;
     color: var(--cor4);
     text-align: center;
     font: bold;
     width: 350px;
     padding: 5px;
-    background-color: #0b3f45;
+    background-color: #0b3b45;
     color: var(--cor7);
     border-radius: 5px 5px 0px 0px;
 }
