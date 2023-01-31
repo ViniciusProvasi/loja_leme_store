@@ -304,17 +304,14 @@ main .menu .primeira-caixa p {
     box-shadow: 2px 1px rgba(0, 0, 0, 0.381);
 }
 #conteiner2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
     
 }
 #conteiner2 .conteiner2-sections{
-    width: 100px;
-    height: 100px;
-    
-    margin: 0 10px ;
+    margin: auto;
+}
+#conteiner2 .conteiner2-sections .alinhamento-video iframe{
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.474);
 }
 .lançamentos{
     display: flex;
