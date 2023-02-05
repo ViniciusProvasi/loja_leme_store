@@ -468,16 +468,30 @@ main .menu .primeira-caixa p {
     background-color: #138080;
 }
 .frete .informacao-mapa{
+    
     display: flex;
+    padding: 0 10px;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    width: 360px;
-    height: 200px;
-    margin: 100px ;
+    align-items: center;
+    justify-content: center;
+    margin: auto 100px;
+    width: 460px;
+    height: 500px;
     border-radius: 5px;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.629);
     background-color: var(--cor7);
+}
+.frete .informacao-mapa iframe{
+    width: 460px;
+    height: 300px;
+    margin: 10px 0;
+}
+.frete .informacao-mapa .informacoes-legenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.263);
+    border-radius: 5px;
 }
 .frete .informacao-mapa h1{
     display: block;
@@ -486,8 +500,9 @@ main .menu .primeira-caixa p {
     color: var(--cor4);
     text-align: center;
     font: bold;
-    width: 350px;
+    width: 450px;
     padding: 5px;
+    margin-bottom: 10px;
     background-color: #0b3b45;
     color: var(--cor7);
     border-radius: 5px 5px 0px 0px;
@@ -499,6 +514,7 @@ main .menu .primeira-caixa p {
     border: 1px solid rgba(0, 0, 0, 0.505);
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 10px;
     font-size: small;
 }
 .frete .informacao-mapa input:focus{
@@ -510,6 +526,7 @@ main .menu .primeira-caixa p {
     border: 1px solid rgba(0, 0, 0, 0.241);
     padding: 10px;
     font-weight: bolder;
+    margin-bottom: 10px;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
 }
